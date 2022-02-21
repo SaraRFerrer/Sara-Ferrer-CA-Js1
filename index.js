@@ -10,5 +10,12 @@ async function getApi() {
 
     recipe.innerHTML = "";
 
+    for(let i = 0; i < margaritaRecipe.lenght; i++);{
+
+    }
+
+    recipe.innerHTML += `<div class"recipe">
+                            <
+
 
 }

@@ -1,0 +1,44 @@
+
+
+/* Reference to loader icon from lessons */
+
+.loader {
+    border: 15px solid rgb(239, 239, 240);
+    border-top: 15px solid blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.recipe {
+    display: flex;
+    gap: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    color: hsl(22, 100%, 50%);
+}
+
+
+img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.contact{
+    font-weight: bold;
+    text-align: center;
+}

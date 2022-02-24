@@ -18,7 +18,7 @@ async function getApi() {
     for(let i = 0; i < drinks.length; i++){
         
 
-    recipe.innerHTML += `<a href="detail.html?id=${drinks[i].id}">
+    recipe.innerHTML += `<a href="details.html?id=${drinks[i].id}">
     <div class"margarita_cards">
     <h2>${drinks[i].strDrink}</h2>
     <p>${drinks[i].strAlcoholic}</p>

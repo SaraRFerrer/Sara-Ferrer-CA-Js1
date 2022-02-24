@@ -18,12 +18,11 @@ async function getApi() {
     for(let i = 0; i < drinks.length; i++){
         
 
-    recipe.innerHTML += `<a href="details.html?id=${drinks[i].id}">
-    <div class"margarita_cards">
-    <h2>${drinks[i].strDrink}</h2>
-    <p>${drinks[i].strAlcoholic}</p>
-    <img src="${drinks[i].strDrinkThumb}"></img></a>
-    </div>`;
+    recipe.innerHTML += `<a href="details.html?id=${drinks[i].idDrink}" class="margarita_cards">
+    <div><h2>${drinks[i].strDrink}</h2></div>
+    <div><p>${drinks[i].strAlcoholic}</p></div>
+    <div><img src="${drinks[i].strDrinkThumb}"></img></div>
+    </a>`;
 
 }
 } catch (error) {

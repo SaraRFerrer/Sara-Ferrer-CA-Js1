@@ -42,3 +42,13 @@ img {
     font-weight: bold;
     text-align: center;
 }
+
+.back{
+    color:blue;
+    align-items: center;
+    font-size: 36px;
+}
+
+body{
+    text-align: center;
+}

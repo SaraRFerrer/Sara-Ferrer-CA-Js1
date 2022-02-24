@@ -21,9 +21,13 @@ async function fetchApi (){
             drinks.innerHTML += `<div>${getDetails[0].strDrink}</div>`;
 
         }
-
-       
+ 
     }
+}
+
+    fetchApi();
+   
+    function getHtml (getDetails) {
 
 
     detailHtml.innerHTML = `<div class="details_cards"><h1>${getDetails[0].strCategory}</h1>
@@ -32,5 +36,7 @@ async function fetchApi (){
     <p>Primary ingretient: ${getDetails[0].strIngredient1}</p></div>`;
 
 }
+
+
 
 

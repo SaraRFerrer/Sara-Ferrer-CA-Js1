@@ -6,7 +6,7 @@ const id = params.get("id");
 console.log(id);
 console.log(params);
 
-const drinksUrl ="https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita" + id;
+const drinksUrl = "www.thecocktaildb.com/api/json/v1/1/lookup.php?i=" + id;
 const detailHtml = document.querySelector(".details");
 const drinks = document.querySelector(".drinks");
 
@@ -24,11 +24,13 @@ async function fetchApi() {
         const getDetails = await response.json();
        
         console.log(getDetails);
+        detailHtml.innerHTML = "";
 
-       detailHtml.innerHTML = `<div class=".details_cards"><h2>${getDetails.strDrink}</h2>
+        detailHtml.innerHTML += `<div class=".details_cards"><h2>${getDetails.strDrink}</h2>
         <p>Type of glass: ${getDetails.strGlass}</p>
         <p>Instructioms: ${getDetails.strInstructions}</p>
         <p>Primary Ingredient: ${getDetails.strIngredient1}</p></div>`;
+
 
 
     } catch(error) {
@@ -41,6 +43,8 @@ async function fetchApi() {
 }
        
 fetchApi();
+
+
 
 
 

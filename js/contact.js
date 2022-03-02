@@ -33,6 +33,8 @@ function validateEmail(email) {
 function validateForm(event) {
     event.preventDefault ();
 
+    loader.innerHTML = "";
+
     if(validateName(fullname.value, 0)){
         nameErr.style.display = "none";
     } else {
@@ -61,10 +63,11 @@ function submit(event) {
     checkLength(subject.value, 9) &&
     validateEmail(email.value,) &&
     checkLength(address.value, 24) &&
-    ) {
+     ) {
         event.preventDefault;
         successful.innerHTML = `<div class="success">Form Successful. </div>;`
         form.reset();
+
 
     } else {
         loader.innerHTML = "";
